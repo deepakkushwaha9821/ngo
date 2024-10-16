@@ -1,0 +1,232 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #F8F8F8; /* Sets the background color for the entire page */
+}
+/* Ensure sections take up full screen height */
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Styling for the first section */
+.first-section {
+  background-color: #f0f0f0;
+}
+/* Styling for the second section */
+.second-section {
+  background-color: #ffffff;
+}
+.container {
+  display: flex;
+  flex-direction: column; /* Stacks children vertically */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+.notification {
+  background-color: #f8f4f4;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  width: 300px; /* Fixed width for the notification */
+  margin: 0 auto; /* Center the notification */
+}
+.notification p {
+  margin: 0;
+  font-size: 14px; /* Font size for notification text */
+}
+.notification button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  font-size: 14px; /* Font size for notification buttons */
+}
+.dashboard-nar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px; /* Adds space above the dashboard */
+}
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px; /* Adds margin to breadcrumb */
+}
+.breadcrumb .home-icon {
+  display: flex;
+  align-items: center;
+  color: inherit; /* Inherit color from parent */
+  text-decoration: none; /* No underline for links */
+  font-size: 20px; /* Font size for breadcrumb icons */
+}
+.breadcrumb-item {
+  color: #000; /* Color for breadcrumb text */
+  text-decoration: none; /* No underline for breadcrumb items */
+}
+.background-container {
+  position: relative; /* Allows absolutely positioned children */
+  height: calc(100vh - 160px); /* Adjust this height based on your layout */
+  margin-top: 20px; /* Space above the background container */
+}
+.welcome-message {
+  position: absolute; /* Centered relative to the parent */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the welcome message */
+  width: 100%; /* Full width of parent */
+  text-align: center; /* Center text */
+  color: white; /* Text color */
+  padding: 20px; /* Space around text */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+.background-image {
+  background-image: url('/images.jpg'); /* Background image */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+}
+.section-second-section{
+  width: 100%;
+  height: 100vh;
+}
+.goal-section {
+  text-align: left;
+  margin-top: 20px;
+  align-items: end;
+  margin-bottom: 125px;
+}
+.progress-circle {
+  width: 120px;
+  height: 120px;
+  border: 5px dotted #f3e0e0;
+  border-radius: 50%;
+  position: relative;
+ margin-left: 130px;
+  
+}
+.goal-achieved {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: red;
+}
+.goal-value {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+.total-goal {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #ff3300;
+  margin-right: 300px;
+}
+.goal-value{
+  margin-top: 25px;
+}
+.total-goal{
+  margin-left: 175px;
+}
+.left-section {
+  padding: 0%;
+  width: 40%;
+  justify-content: space-between;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px 0;
+}
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px; /* Rounded corners */
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+.btn-rewards {
+  background: linear-gradient(45deg, #ff5e62, #ff9966);
+}
+.btn-copy {
+  background: linear-gradient(45deg, #6666ff, #3399ff);
+}
+.btn-extend {
+  background-color: #ff3300;
+}
+.btn-start {
+  background: linear-gradient(45deg, #ff5e62, #ff9966);
+}
+.btn-share {
+  background: linear-gradient(45deg, #ff5e62, #ff9966);
+  display: inline-block;
+}
+/* WhatsApp */
+.btn-share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #ff5e62, #ff9966);
+  padding: 10px 15px;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  gap: 5px;
+}
+.btn-share img {
+  width: 16px;
+  height: 16px;
+}
+.star {
+  display: flex; /* Flexbox for horizontal alignment */
+  justify-content: space-between; /* Left section to the left, right section to the right */
+  align-items: center; /* Vertically align both sections */
+  padding: 20px;
+}
+.left-section {
+  flex: 1;
+  margin-right: 20px; /* Space between left and right sections */
+}
+.right-section {
+  flex: 1;
+  text-align: center; /* Center-aligns content inside the right section */
+  display: flex;
+  flex-direction: column; /* Arrange level and line vertically */
+  align-items: center; /* Center-aligns both level and line horizontally */
+  margin-bottom: 5px;
+}
+.line {
+  height: 1px;
+  width: 100%; /* Ensures the line fills the right section width */
+  max-width: 450px; /* Set a maximum width for the line */
+  background-color: #3399ff;
+  border-radius: 2px;
+  margin-top: 10px; /* Space between "Level Achieved" and the line */
+}
+.next-level-info {
+  margin: 5px;
+}
+.time-left {
+  margin: 5px;
+  margin-bottom: 5px;
+}
+.bn {
+  margin: 5px;
+}
+.reference-code {
+  margin: 5px;
+}
+.ref {
+  margin: 5px;  
+}
